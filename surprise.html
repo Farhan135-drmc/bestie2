@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Surprise 🎁</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Dancing+Script:wght@700&family=Cinzel:wght@600&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="page-container">
+    <h1 class="cursive-title">A Little Surprise</h1>
+    <p class="subtitle">Tap the gift box 🎁</p>
+
+    <div class="gift-box" onclick="revealSurprise()">
+      🎁
+    </div>
+
+    <div class="surprise-content" id="surprise">
+      <h2 class="gold-name">Happy Birthday, Tasfia! 🎂💜</h2>
+      <p class="surprise-msg">
+        You are the plot twist, the happy ending, and the whole story. 🌟<br><br>
+        Thank you for being my cousin, my best friend, my pookie, and my person.<br>
+        May this year bring you everything your beautiful heart desires. 💖
+      </p>
+      <p class="signature">— With love, always 💜</p>
+
+      <div class="final-emojis">🎈✨🎂💛🌟💜🎉</div>
+    </div>
+
+    <div class="back-home">
+      <a href="index.html" class="btn">← Back Home</a>
+    </div>
+  </div>
+
+  <script>
+    function revealSurprise() {
+      document.getElementById('surprise').classList.add('show');
+      setTimeout(() => {
+        document.getElementById('surprise').scrollIntoView({ behavior: 'smooth' });
+      }, 300);
+    }
+  </script>
+</body>
+</html>

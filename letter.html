@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>A Letter For Tasfia 💌</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Dancing+Script:wght@700&family=Cinzel:wght@600&family=Poppins:wght@300;500&family=Caveat:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="page-container letter-page">
+    <h1 class="cursive-title">A Letter For You</h1>
+    <p class="subtitle">Click the envelope to open 💜</p>
+
+    <div class="envelope" id="envelope" onclick="openLetter()">
+      <div class="flap"></div>
+      <div class="body"></div>
+      <div class="heart">💜</div>
+    </div>
+
+    <div class="letter-paper" id="letter">
+      <h2 class="letter-title">Dear Tasfia,</h2>
+
+      <p class="letter-text">
+        Happy Birthday, my sweetest pookie, my favorite cousin, and my forever best friend. 🎂💜
+      </p>
+
+      <p class="letter-text">
+        From the day we were kids running around, fighting over silly things, to now — where we share secrets, laugh till our stomachs hurt, and hype each other up — every moment with you has been a blessing wrapped in gold.
+      </p>
+
+      <p class="letter-text">
+        You're the kind of person who makes ordinary days feel like festivals. Your smile is my favorite sound. Your laugh is my comfort zone. And your presence? Pure magic.
+      </p>
+
+      <p class="letter-text">
+        As your cousin, I've watched you grow into someone so strong, so kind, so unbelievably beautiful — inside and out. And as your friend, I've had the privilege of knowing the real you — the goofy, the dreamy, the dramatic, and the deeply loving soul.
+      </p>
+
+      <p class="letter-text">
+        On your special day, I wish you a life as golden as your heart. May every dream you whisper at midnight come true. May you always find reasons to smile, people who love you the way you deserve, and moments that feel like sunshine.
+      </p>
+
+      <p class="letter-text">
+        Thank you for being you. Thank you for being my person. And thank you for making this whole "cousin + bestie" combo the most iconic thing ever.
+      </p>
+
+      <p class="letter-text">
+        Here's to more inside jokes, more late-night talks, more adventures, and a lifetime of memories together. 💫
+      </p>
+
+      <p class="letter-signoff">
+        With all my love, always,<br>
+        Your favorite human 💜
+      </p>
+    </div>
+
+    <div class="back-home">
+      <a href="index.html" class="btn">← Back Home</a>
+    </div>
+  </div>
+
+  <script>
+    function openLetter() {
+      document.getElementById('envelope').classList.add('opened');
+      document.getElementById('letter').classList.add('show');
+      setTimeout(() => {
+        document.getElementById('letter').scrollIntoView({ behavior: 'smooth' });
+      }, 400);
+    }
+  </script>
+</body>
+</html>
